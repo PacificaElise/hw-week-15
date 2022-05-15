@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW week15</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <select name="themes" class="themes">
+      <option disabled selected="selected">Выберите тему</option>
+      <option class="dark" value="#003153" style="background-color: #003153">
+        Темная
+      </option>
+      <option value="#e9ebee" style="background-color: #e9ebee">Светлая</option>
+      <option value="#fefe22" style="background-color: #fefe22">Яркая</option>
+      <option value="#50c878" style="background-color: #50c878">Зеленая</option>
+    </select>
+    <div class="login">
+      <h1>Log in</h1>
+      <div class="login__inputs">
+        <label for="firstName"
+          ><input id="firstName" placeholder="First Name"
+        /></label>
+        <label for="lastName"
+          ><input id="lastName" placeholder="Last Name"
+        /></label>
+        <label for="city"><input id="city" placeholder="City" /></label>
+        <label for="email"><input id="email" placeholder="Email" /></label>
+        <label for="password"
+          ><input id="password" placeholder="Password"
+        /></label>
+      </div>
+      <label for="checkbox"><input type="checkbox" id="checkbox" /></label>
+      <span>Remember me</span>
+      <a href="#">Forgot password?</a>
+      <div id="errorMessage"></div>
+      <button type="submit" class="login__btn">log in</button>
+    </div>
+    <div class="calc">
+      <h2>Калькулятор</h2>
+      <label for="a"><input type="text" id="a" /></label>
+      <div class="btns">
+        <button class="btn" id="plus" onclick="ev='+'">+</button>
+        <button class="btn" id="minus" onclick="ev='-'">-</button>
+        <button class="btn" id="mult" onclick="ev='*'">*</button>
+        <button class="btn" id="divide" onclick="ev='/'">/</button>
+      </div>
+      <label for="b"><input type="text" id="b" /></label>
+      <button class="btn" id="equall">=</button>
+      <div id="check"></div>
+      <div id="result"></div>
+      <button class="btn" type="reset" id="reset">Очистить</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
